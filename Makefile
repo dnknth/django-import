@@ -1,6 +1,6 @@
 DB = db.sqlite3
 
-run: $(DB)
+run: $(DB) .venv
 	./manage.py runserver
 	
 load: $(DB)

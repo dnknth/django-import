@@ -3,7 +3,7 @@
 Utility classes to static data sets into [Django](https://www.djangoproject.com) models with a minimum of fuss. Includes an example application with importers for:
 
 - Arbitrary text formats, e.g. [FRB routing codes](example_app/management/commands/load_fedwire.py),
-- CSV, e.g. [Maxmind Geo IPs](example_app/management/commands/load_geoip.py),
+- CSV, e.g. [Maxmind Geo IPs](example_app/management/commands/load_geoip.py). TODO: the Geo IP format used by the examples has been [discontinued](https://support.maxmind.com/geolite-legacy-discontinuation-notice/), code is not yet updated.
 - ESRI shape files for [GeoDjango](https://docs.djangoproject.com/en/2.1/ref/contrib/gis/), e.g. [Naturalearth world cities](example_app/management/commands/load_cities.py).
 
 Datasets can be loaded from disk or via HTTP and extracted from ZIP archives or plain files.

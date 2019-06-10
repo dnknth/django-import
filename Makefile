@@ -8,8 +8,8 @@ load: $(DB)
 	$(BIN)/python3 manage.py load_fedwire
 	$(BIN)/python3 manage.py load_cities
 	$(BIN)/python3 manage.py load_tz
-	$(BIN)/python3 manage.py load_geoip
-	$(BIN)/python3 manage.py load_ips
+	# $(BIN)/python3 manage.py load_geoip
+	# $(BIN)/python3 manage.py load_ips
 
 $(DB): .venv3
 	$(BIN)/python3 manage.py migrate
